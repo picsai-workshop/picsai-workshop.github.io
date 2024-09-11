@@ -96,16 +96,18 @@ We are thrilled to have the following researchers joining us for the event.
   {% assign sorted_speakers = categorized_speakers | sort: "secondname" %}
   {% if page.speaker_horizontal %}
   <div class="container">
-    <div class="row row-cols-2"> 
-      {% for speaker in sorted_speakers %}
-        {% include speakers_horizontal.liquid %}
-      {% endfor %}
-    </div>
+    {% for speaker in sorted_speakers %}
+      {% if forloop.index0 % 4 == 0 %}
+        <div class="row row-cols-4"> {% endif %} 
+          {% include speakers_horizontal.liquid %}
+      {% if forloop.index % 4 == 0 or forloop.last %}
+        </div> {% endif %}
+    {% endfor %}
   </div>
   {% else %}
-  <div class="speaker-grid"> {%- comment -%} Using flexbox for wrapping -%}{%- endcomment -%}
+  <div class="d-flex flex-wrap"> 
     {% for speaker in sorted_speakers %}
-      {% include speakers.liquid %}
+      <div class="p-2 flex-grow-1 flex-basis-0" style="flex-basis: 25%;"> {%- include speakers.liquid %}</div>
     {% endfor %}
   </div>
   {% endif %}
@@ -118,19 +120,22 @@ We are thrilled to have the following researchers joining us for the event.
   {% if page.speaker_horizontal %}
 
   <div class="container">
-    <div class="row row-cols-3">
-      {% for speaker in sorted_speakers %}
-        {% include speakers_horizontal.liquid %}
-      {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="speaker-grid"> {%- comment -%} Using flexbox for wrapping -%}{%- endcomment -%}
     {% for speaker in sorted_speakers %}
-      {% include speakers.liquid %}
+      {% if forloop.index0 % 4 == 0 %}
+        <div class="row row-cols-4"> {% endif %}
+        {% include speakers_horizontal.liquid %}
+      {% if forloop.index % 4 == 0 or forloop.last %}
+        </div> {% endif %}
     {% endfor %}
   </div>
-  {% endif %}
+
+{% else %}
+  <div class="d-flex flex-wrap">
+    {% for speaker in sorted_speakers %}
+      <div class="p-2 flex-grow-1 flex-basis-0" style="flex-basis: 25%;"> {%- include speakers.liquid %}</div>
+    {% endfor %}
+  </div>
+{% endif %}
 {% endif %}
 </div>
 
