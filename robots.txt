@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://arlet-workshop.github.io/sitemap.xml
+Sitemap: https://picsai-workshop.github.io/sitemap.xml
