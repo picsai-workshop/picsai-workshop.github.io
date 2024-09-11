@@ -3,7 +3,7 @@ layout: page
 name: Ilja Kuzborskij
 secondname: Kuzborskij
 affiliation: Google DeepMind
-img: assets/img/ilja.jpg
+img: assets/img/ilja.png
 importance: 5
 category: participant
 website: https://iljaku.github.io/

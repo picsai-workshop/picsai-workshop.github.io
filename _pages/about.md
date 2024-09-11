@@ -17,7 +17,7 @@ news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
-display_categories: [participant]
+# display_categories: [participant]
 speaker_horizontal: false
 organizer_horizontal: true
 ---
@@ -131,7 +131,9 @@ We are thrilled to have the following researchers joining us for the event.
 {% else %}
   <div class="d-flex flex-wrap">
     {% for speaker in sorted_speakers %}
-      <div class="p-2 flex-grow-1 flex-basis-0" style="flex-basis: 25%;"> {%- include speakers.liquid %}</div>
+      <div class="p-2 flex-grow-0 flex-basis-0" style="flex-basis: 25%;">
+        {%- include speakers.liquid %}
+      </div>
     {% endfor %}
   </div>
 {% endif %}
