@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: AI, Probability, Information, and Combinatorics Symposium, Monday-Saturday, 22-28 of September 2024</a>. Paestum, Italy.
+subtitle: Probability, Information, Combinatorics, and AI Symposium, Monday-Saturday, 22-28 of September 2024</a>. Paestum, Italy.
 
 # profile:
 #   align: right
@@ -23,7 +23,7 @@ organizer_horizontal: true
 ---
 
 
-<p>The AI, Probability, Information, and Combinatorics Symposium
+<p>The Probability, Information, Combinatorics, and AI Symposium
 welcomes researchers and practitioners to Paestum, Italy this
 September for a focused exploration of the interplay between these
 foundational fields. This symposium will provide a platform for
@@ -60,20 +60,19 @@ Italy, renowned for its ancient Greek temples and stunning coastal
 setting.</p>
 
 ---
-<h2 style="text-align:center;">Highlights</h2>
 ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <h3 style="text-align:center;">A panel to discuss the current state of RL</h3>
+        <h3 style="text-align:center;"></h3>
         {% include figure.liquid loading="eager" path="assets/img/panel_watercolor.jpg" title="Talks image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <h3 style="text-align:center;">Idea track: send your problems</h3>
+        <h3 style="text-align:center;"></h3>
         {% include figure.liquid loading="eager" path="assets/img/ideas_watercolor.jpg" title="Ideas image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <h3 style="text-align:center;">Research track: send your solutions</h3>
+        <h3 style="text-align:center;"></h3>
         {% include figure.liquid loading="eager" path="assets/img/posters_watercolor.jpg" title="Posters image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
