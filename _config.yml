@@ -2,12 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: ARLET # the website title (if blank, full name will be used instead)
-first_name: Aligning Reinforcement Learning Experimentalists and Theorists
+title: PICSAI # the website title (if blank, full name will be used instead)
+first_name: PICSAI Workshop
 middle_name:
 last_name:
 print_name: true
-email: arlet.icml2024@gmail.com
+email: picsai.workshop@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
