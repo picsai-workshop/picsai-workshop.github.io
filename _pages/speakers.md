@@ -5,7 +5,7 @@ permalink: /speakers/
 description: A growing collection of your cool speakers.
 nav: false
 nav_order: 10
-display_categories: [lecturer, panelist]
+display_categories: [speaker, participant]
 horizontal: false
 ---
 

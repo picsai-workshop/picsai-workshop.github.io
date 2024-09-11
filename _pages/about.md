@@ -17,10 +17,11 @@ news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
-display_categories: [lecturer, panelist]
+display_categories: [participant]
 speaker_horizontal: false
 organizer_horizontal: true
 ---
+
 
 <p>The AI, Probability, Information, and Combinatorics Symposium
 welcomes researchers and practitioners to Paestum, Italy this
@@ -81,32 +82,30 @@ See the [schedule](/schedule) for details.
 
 <!-- Speakers -->
 <br>
-<h1><b>Speakers</b></h1>
+<h1><b>Speakers and Participants</b></h1>
 
 We are thrilled to have the following researchers joining us for the event.
 
 <div class="speakers">
 {% if site.enable_speaker_categories and page.display_categories %}
-  <!-- Display categorized speakers -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_speakers = site.speakers | where: "category", category %}
-  {% assign sorted_speakers = categorized_speakers | sort: "importance" %}
-  <!-- Generate cards for each speaker -->
+  {% assign sorted_speakers = categorized_speakers | sort: "secondname" %}
   {% if page.speaker_horizontal %}
   <div class="container">
-    <div class="row row-cols-2">
-    {% for speaker in sorted_speakers %}
-      {% include speakers_horizontal.liquid %}
-    {% endfor %}
+    <div class="row row-cols-2"> 
+      {% for speaker in sorted_speakers %}
+        {% include speakers_horizontal.liquid %}
+      {% endfor %}
     </div>
   </div>
   {% else %}
-  <div class="d-flex justify-content-between">
+  <div class="speaker-grid"> {%- comment -%} Using flexbox for wrapping -%}{%- endcomment -%}
     {% for speaker in sorted_speakers %}
-      <div class="p-2">{% include speakers.liquid %}</div>
+      {% include speakers.liquid %}
     {% endfor %}
   </div>
   {% endif %}
@@ -114,23 +113,19 @@ We are thrilled to have the following researchers joining us for the event.
 
 {% else %}
 
-<!-- Display speakers without categories -->
+{% assign sorted_speakers = site.speakers | sort: "secondname" %}
 
-{% assign sorted_speakers = site.speakers | sort: "importance" %}
-
-  <!-- Generate cards for each speaker -->
-
-{% if page.speaker_horizontal %}
+  {% if page.speaker_horizontal %}
 
   <div class="container">
-    <div class="row row-cols-2">
-    {% for speaker in sorted_speakers %}
-      {% include speakers_horizontal.liquid %}
-    {% endfor %}
+    <div class="row row-cols-3">
+      {% for speaker in sorted_speakers %}
+        {% include speakers_horizontal.liquid %}
+      {% endfor %}
     </div>
   </div>
   {% else %}
-  <div class="grid">
+  <div class="speaker-grid"> {%- comment -%} Using flexbox for wrapping -%}{%- endcomment -%}
     {% for speaker in sorted_speakers %}
       {% include speakers.liquid %}
     {% endfor %}
