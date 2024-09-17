@@ -31,7 +31,13 @@ the dissemination of cutting-edge research and the fostering of
 interdisciplinary collaboration through a series of invited talks
 by leading experts in their respective fields. </p>
 
+<br>
+<br>
+
 <h2>Symposium Highlights</h2>
+
+<br>
+<br>
 
 <div class="track">
     <h3>Dual Tracks:</h3>
