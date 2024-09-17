@@ -89,7 +89,7 @@ See the [schedule](/schedule) for details.
 <br>
 <h1><b>Speakers and Participants</b></h1>
 
-We are thrilled to have the following researchers joining us for the event.
+We are thrilled to have the following researchers and artists joining us for the event.
 
 <div class="speakers">
 {% if site.enable_speaker_categories and page.display_categories %}
