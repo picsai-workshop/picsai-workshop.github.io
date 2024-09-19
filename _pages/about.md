@@ -98,7 +98,7 @@ We are thrilled to have the following researchers and artists joining us for the
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_speakers = site.speakers | where: "category", category %}
-  {% assign sorted_speakers = categorized_speakers | sort: "secondname" %}
+  {% assign sorted_speakers = categorized_speakers | sort: "importance" %}
   {% if page.speaker_horizontal %}
   <div class="container">
     {% for speaker in sorted_speakers %}
