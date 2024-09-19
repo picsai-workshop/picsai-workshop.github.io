@@ -1,6 +1,6 @@
 ---
 layout: page
-name: Anna 
+name: Anna Aristova
 secondname: Aristova
 img: assets/img/anna.jpg
 importance: 5
