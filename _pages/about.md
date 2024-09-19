@@ -120,7 +120,7 @@ We are thrilled to have the following researchers and artists joining us for the
 
 {% else %}
 
-{% assign sorted_speakers = site.speakers | sort: "secondname" %}
+{% assign sorted_speakers = site.speakers | sort: "importance" %}
 
   {% if page.speaker_horizontal %}
 
