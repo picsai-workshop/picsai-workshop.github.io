@@ -6,5 +6,5 @@ img: assets/img/oleg.jpg
 importance: 11
 category: participant
 website: https://olegmoshkovich.github.io
-instagram: instagram.com/olegmoshkovich
+instagram: https://www.instagram.com/olegmoshkovich
 ---
