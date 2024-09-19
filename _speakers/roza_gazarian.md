@@ -6,5 +6,5 @@ img: assets/img/roza.jpg
 importance: 8
 category: participant
 website: https://rozagazarian.com/
-instagram: www.instagram.com/rozagazarian
+instagram: https://www.instagram.com/rozagazarian
 ---
