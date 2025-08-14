@@ -46,11 +46,11 @@ organizer_horizontal: true
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <h3 style="text-align:center;"></h3>
-        {% include figure.liquid loading="eager" path="assets/img/tower_alanya.jpg" title="Ruins Paestum" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/tower_alanya.jpg" title="Tower Alanya" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <h3 style="text-align:center;"></h3>
-        {% include figure.liquid loading="eager" path="assets/img/port_alanya.jpg" title="Beach Paestum" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/port_alanya.png" title="Port Alanya" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
