@@ -8,5 +8,5 @@ importance: 2
 category: participant
 website: https://frarzani.github.io/
 scholar: https://scholar.google.com/citations?user=xRDb0O8AAAAJ&hl=de&oi=ao
-editions: [picsai2024]
+editions: [picsai2024, picsai2025]
 ---
