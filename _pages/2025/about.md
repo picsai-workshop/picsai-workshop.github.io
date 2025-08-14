@@ -22,7 +22,13 @@ the dissemination of cutting-edge research and the fostering of
 interdisciplinary collaboration through a series of invited talks
 by leading experts in their respective fields. </p>
 
+<br>
+<br>
+
 <h2>Symposium Highlights</h2>
+
+<br>
+<br>
 
 <div class="track">
     <h3>Dual Tracks:</h3>
@@ -67,7 +73,7 @@ See the [schedule](/schedule) for details.
 <br>
 <h1><b>Speakers and Participants</b></h1>
 
-We are thrilled to have the following researchers joining us for the event.
+We are thrilled to have the following researchers and artists joining us for the event.
 
 <div class="speakers">
 {% if site.enable_speaker_categories and page.display_categories %}
@@ -76,7 +82,7 @@ We are thrilled to have the following researchers joining us for the event.
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_speakers = site.speakers | where: "category", category %}
-  {% assign sorted_speakers = categorized_speakers | sort: "secondname" %}
+  {% assign sorted_speakers = categorized_speakers | sort: "importance" %}
   {% if page.speaker_horizontal %}
   <div class="container">
     {% for speaker in sorted_speakers %}
@@ -98,7 +104,7 @@ We are thrilled to have the following researchers joining us for the event.
 
 {% else %}
 
-{% assign sorted_speakers = site.speakers | sort: "secondname" %}
+{% assign sorted_speakers = site.speakers | sort: "importance" %}
 
   {% if page.speaker_horizontal %}
 
