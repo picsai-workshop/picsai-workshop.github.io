@@ -8,4 +8,5 @@ importance: 3
 category: participant
 website: https://cesa-bianchi.di.unimi.it/
 scholar: https://scholar.google.com/citations?user=BWADJUkAAAAJ&hl=en&oi=ao
+editions: [picsai2024]
 ---

@@ -7,4 +7,5 @@ importance: 8
 category: participant
 website: https://rozagazarian.com/
 instagram: https://www.instagram.com/rozagazarian
+editions: [picsai2024]
 ---

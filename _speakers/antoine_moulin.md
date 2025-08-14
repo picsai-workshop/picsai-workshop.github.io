@@ -8,4 +8,5 @@ importance: 5
 category: participant
 website: https://antoine-moulin.github.io/
 scholar: https://scholar.google.com/citations?user=W6d2vtMAAAAJ&hl=en&oi=ao
+editions: [picsai2024]
 ---

@@ -7,4 +7,5 @@ importance: 11
 category: participant
 website: https://olegmoshkovich.github.io
 instagram: https://www.instagram.com/olegmoshkovich
+editions: [picsai2024]
 ---

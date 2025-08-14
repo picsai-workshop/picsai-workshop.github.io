@@ -7,4 +7,5 @@ importance: 7
 category: participant
 website: https://www.anna-aristova.com/
 instagram: https://www.instagram.com/_anna.aristova_/
+editions: [picsai2024]
 ---

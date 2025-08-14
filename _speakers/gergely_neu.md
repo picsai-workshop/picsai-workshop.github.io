@@ -8,4 +8,5 @@ importance: 6
 category: participant
 website: https://cs.bme.hu/~gergo/
 scholar: https://scholar.google.com/citations?user=uz27G84AAAAJ&hl=en
+editions: [picsai2024]
 ---

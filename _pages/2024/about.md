@@ -1,8 +1,9 @@
 ---
 layout: about
-title: About
-permalink: /
+title: About PICSAI 2024
+permalink: /2024/about
 subtitle: Probability, Information, Combinatorics, and AI Symposium, Monday-Saturday, 22-28 of September 2024</a>. Paestum, Italy.
+edition: picsai2024
 
 news: false
 selected_papers: false
@@ -14,13 +15,7 @@ organizer_horizontal: true
 ---
 
 
-<p>The Probability, Information, Combinatorics, and AI Symposium
-welcomes researchers and practitioners to Paestum, Italy this
-September for a focused exploration of the interplay between these
-foundational fields. This symposium will provide a platform for
-the dissemination of cutting-edge research and the fostering of
-interdisciplinary collaboration through a series of invited talks
-by leading experts in their respective fields. </p>
+<p>The Probability, Information, Combinatorics, and AI Symposium welcomes researchers and practitioners to Paestum, Italy this September for a focused exploration of the interplay between these foundational fields. This symposium will provide a platform for the dissemination of cutting-edge research and the fostering of interdisciplinary collaboration through a series of invited talks by leading experts in their respective fields.</p>
 
 <h2>Symposium Highlights</h2>
 
@@ -29,26 +24,18 @@ by leading experts in their respective fields. </p>
     <ul>
         <li>
             <h4>AI Track:</h4>
-            <p>This track will delve into the theoretical
-            underpinnings and practical applications of artificial
-            intelligence, with a focus on learning theory, quantum
-            algorithms, and language models.</p>
+            <p>This track will delve into the theoretical underpinnings and practical applications of artificial intelligence, with a focus on learning theory, quantum algorithms, and language models.</p>
         </li>
         <li>
             <h4>Arts Track:</h4> 
-            <p>This track will explore the fascinating
-            intersection of AI and the arts, examining how machine
-            learning and computational creativity are reshaping
-            artistic expression.</p>
+            <p>This track will explore the fascinating intersection of AI and the arts, examining how machine learning and computational creativity are reshaping artistic expression.</p>
         </li>
     </ul>
 </div>
 
 
 <h2>Venue</h2>
-<p>The symposium will be held in the historic town of Paestum,
-Italy, renowned for its ancient Greek temples and stunning coastal
-setting.</p>
+<p>The symposium will be held in the historic town of Paestum, Italy, renowned for its ancient Greek temples and stunning coastal setting.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -61,7 +48,7 @@ setting.</p>
     </div>
 </div>
 
-See the [schedule](/schedule) for details.
+See the [schedule](/2024/schedule) for details.
 
 <!-- Speakers -->
 <br>
@@ -75,7 +62,8 @@ We are thrilled to have the following researchers joining us for the event.
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {% assign categorized_speakers = site.speakers | where: "category", category %}
+  {% assign 2024_speakers = site.speakers | where_exp: "item", "item.editions contains 'picsai2024'" %}
+  {% assign categorized_speakers = 2024_speakers | where: "category", category %}
   {% assign sorted_speakers = categorized_speakers | sort: "secondname" %}
   {% if page.speaker_horizontal %}
   <div class="container">
@@ -98,7 +86,8 @@ We are thrilled to have the following researchers joining us for the event.
 
 {% else %}
 
-{% assign sorted_speakers = site.speakers | sort: "secondname" %}
+{% assign 2024_speakers = site.speakers | where_exp: "item", "item.editions contains 'picsai2024'" %}
+{% assign sorted_speakers = 2024_speakers | sort: "secondname" %}
 
   {% if page.speaker_horizontal %}
 

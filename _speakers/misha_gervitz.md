@@ -7,6 +7,5 @@ importance: 9
 category: participant
 website: https://www.mgervits.com
 instagram: https://www.instagram.com/xtnkt
+editions: [picsai2024]
 ---
-
-
