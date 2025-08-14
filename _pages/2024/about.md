@@ -4,18 +4,9 @@ title: About
 permalink: /
 subtitle: Probability, Information, Combinatorics, and AI Symposium, Monday-Saturday, 22-28 of September 2024</a>. Paestum, Italy.
 
-# profile:
-#   align: right
-#   image: prof_pic.jpg
-#   image_circular: false # crops the image to make it circular
-#   more_info: >
-#     <p>555 your office number</p>
-#     <p>123 your address street</p>
-#     <p>Your City, State 12345</p>
-
-news: false # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+news: false
+selected_papers: false
+social: false
 
 # display_categories: [participant]
 speaker_horizontal: false
@@ -59,21 +50,14 @@ by leading experts in their respective fields. </p>
 Italy, renowned for its ancient Greek temples and stunning coastal
 setting.</p>
 
----
----
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <h3 style="text-align:center;"></h3>
-        {% include figure.liquid loading="eager" path="assets/img/panel_watercolor.jpg" title="Talks image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/veduta_di_paestum.jpg" title="Ruins Paestum" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <h3 style="text-align:center;"></h3>
-        {% include figure.liquid loading="eager" path="assets/img/ideas_watercolor.jpg" title="Ideas image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <h3 style="text-align:center;"></h3>
-        {% include figure.liquid loading="eager" path="assets/img/posters_watercolor.jpg" title="Posters image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/beach_paestum.jpg" title="Beach Paestum" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
